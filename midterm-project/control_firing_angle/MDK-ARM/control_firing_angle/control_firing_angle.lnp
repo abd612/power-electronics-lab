@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"control_firing_angle\startup_stm32f401xc.o"
+"control_firing_angle\gpio.o"
+"control_firing_angle\tim.o"
+"control_firing_angle\main.o"
+"control_firing_angle\stm32f4xx_it.o"
+"control_firing_angle\stm32f4xx_hal_msp.o"
+"control_firing_angle\system_stm32f4xx.o"
+"control_firing_angle\stm32f4xx_hal_rcc_ex.o"
+"control_firing_angle\stm32f4xx_hal_flash_ex.o"
+"control_firing_angle\stm32f4xx_hal_dma.o"
+"control_firing_angle\stm32f4xx_hal_flash_ramfunc.o"
+"control_firing_angle\stm32f4xx_hal_rcc.o"
+"control_firing_angle\stm32f4xx_hal_pwr.o"
+"control_firing_angle\stm32f4xx_hal_cortex.o"
+"control_firing_angle\stm32f4xx_hal_dma_ex.o"
+"control_firing_angle\stm32f4xx_hal_pwr_ex.o"
+"control_firing_angle\stm32f4xx_hal_tim_ex.o"
+"control_firing_angle\stm32f4xx_hal_gpio.o"
+"control_firing_angle\stm32f4xx_hal_tim.o"
+"control_firing_angle\stm32f4xx_hal_flash.o"
+"control_firing_angle\stm32f4xx_hal.o"
+--library_type=microlib --strict --scatter "control_firing_angle\control_firing_angle.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "control_firing_angle.map" -o control_firing_angle\control_firing_angle.axf
